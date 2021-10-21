@@ -1,0 +1,14 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .welcome {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,28 @@
+<section class="new-training">
+  <mat-card class="new-training__card">
+    <mat-card-title>Time to start a workout</mat-card-title>
+    <mat-card-content>
+      <mat-form-field appearance="fill">
+        <mat-label>Select exercise</mat-label>
+        <mat-select>
+          <mat-option value="crunches">
+            Crunches
+          </mat-option>
+          <mat-option value="touch-toes">
+            Touch toes
+          </mat-option>
+          <mat-option value="side-lunges">
+            Side Lunches
+          </mat-option>
+          <mat-option value="burpees">
+            Burpees
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="submit" mat-button (click)="onStartTraining()">Start</button>
+    </mat-card-actions>
+  </mat-card>
+</section>
+

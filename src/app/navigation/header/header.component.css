@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: lightgray;
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  gap: 10px;
+}

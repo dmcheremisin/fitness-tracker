@@ -9,11 +9,14 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
-import { TrainingComponent } from './auth/training/training/training.component';
-import { CurrentTrainingComponent } from './auth/training/current-training/current-training.component';
-import { NewTrainingComponent } from './auth/training/new-training/new-training.component';
-import { PastTrainingsComponent } from './auth/training/past-trainings/past-trainings.component';
+import { TrainingComponent } from './training/training/training.component';
+import { CurrentTrainingComponent } from './training/current-training/current-training.component';
+import { NewTrainingComponent } from './training/new-training/new-training.component';
+import { PastTrainingsComponent } from './training/past-trainings/past-trainings.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { StopTrainingComponent } from './training/stop-training/stop-training.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingsComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
   ],
   exports:[FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 }
