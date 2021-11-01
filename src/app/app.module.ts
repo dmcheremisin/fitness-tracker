@@ -22,6 +22,7 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { UiService } from './shared/ui.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    StopTrainingComponent
+    StopTrainingComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +50,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     AngularFireAuthModule
   ],
   exports: [FormsModule],
-  providers: [AuthService],
+  providers: [AuthService, UiService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
