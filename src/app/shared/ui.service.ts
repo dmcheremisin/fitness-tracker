@@ -10,6 +10,6 @@ export class UiService {
   }
 
   showSnackBar(message, action, duration) {
-    this.snackBar.open(message, null, { duration: 3000 });
+    this.snackBar.open(message, null, { duration });
   }
 }
