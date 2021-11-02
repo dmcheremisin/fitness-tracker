@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { MaterialModule } from '../material/material.module';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,9 +10,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     LoginComponent,
   ],
   imports: [
-    CommonModule,
-    FormsModule,
-    MaterialModule,
+    SharedModule,
     AngularFireAuthModule
   ],
   exports: []
